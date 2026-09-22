@@ -17,6 +17,7 @@ import pe.upeu.andinasalud.presentation.components.*
   val proxima=estado.citas.firstOrNull { it.estado is EstadoCita.Programada }
   if(proxima!=null)TarjetaCita(proxima){detalle(proxima.id)} else Text("No tienes citas Programadas.")
  } } }
- item { Button(onClick=citas,modifier=Modifier.fillMaxWidth()){Text("Mis citas")};OutlinedButton(onClick=solicitar,modifier=Modifier.fillMaxWidth()){Text("Solicitar cita")} }
+ item { Button(onClick=citas,modifier=Modifier.fillMaxWidth()){Text("Mis citas")};OutlinedButton(onClick=solicitar,enabled=estado.puedeSolicitar,modifier=Modifier.fillMaxWidth()){Text("Solicitar cita")}
+ if(!estado.puedeSolicitar)Text("Has alcanzado el límite de citas programadas.") }
  } }
 }

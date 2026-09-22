@@ -17,7 +17,8 @@ object CitasSimuladas {
    return (0..5).map { i ->
      val fecha = hoy.plus(if(i<3) i+2 else -i,DateTimeUnit.DAY)
      val estado = when(i) { 0,1,2 -> EstadoCita.Programada(i!=1); 3,4 -> EstadoCita.Atendida("Control en tres meses."); else -> EstadoCita.Cancelada("Viaje del paciente",true) }
-     Cita(i+1,paciente.id,medicos[i*2 % medicos.size],sedes[i % sedes.size],LocalDateTime(fecha,LocalTime(9+i,0)),"Consulta y evaluación general",estado)
+     Cita(i+1,paciente.id,medicos[i*2 % medicos.size],sedes[i % sedes.size],LocalDateTime(fecha,LocalTime(9+i,0)),"Consulta y evaluación general",estado,
+       if(i % 2 == 0) ModalidadAtencion.PRESENCIAL else ModalidadAtencion.TELECONSULTA)
    }
  }
 }

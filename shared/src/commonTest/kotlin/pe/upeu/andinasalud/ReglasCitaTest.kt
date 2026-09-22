@@ -16,6 +16,7 @@ class RelojFijo : Reloj {
     override val zona = TimeZone.UTC
 }
 
+@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)
 class ReglasCitaTest {
     private val reloj = RelojFijo()
     private val reglas = ReglasCita(reloj)
