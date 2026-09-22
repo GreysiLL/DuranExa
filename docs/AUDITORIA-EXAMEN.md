@@ -54,7 +54,7 @@ DetalleCitaViewModel ahora muestra un aviso útil si la excepción de carga o ca
 - Código, pruebas y documentación finales están preparados localmente. Ejecutar finalizar-entrega.ps1 desde la sesión propietaria para publicar sin forzar el historial y crear v1.0-unidad1 sobre main. El script verifica ambos identificadores remotos.
 - No hay evidencia de pull requests revisados por otra persona. Trabajo individual no significa que las revisiones originales del enunciado hayan ocurrido.
 - La Parte II se concentró en un commit funcional. Los commits posteriores no cumplen retrospectivamente los tres commits separados durante los 120 minutos. El enunciado contempla descuento por ello.
-- El PDF de Git tiene capturas reales de GitHub. Shortlog está transcrito como texto y debe acompañarse de una captura real de su salida si se aplica literalmente ese formato de entrega.
+- Evidencia-Git-AndinaSalud.pdf incorpora ahora la captura real de la terminal con shortlog y el gráfico de ramas. La entrega original y v1.0-unidad1 ya se publicaron; el complemento documental conserva la etiqueta.
 - La defensa vale dos puntos y requiere mostrar y explicar el código. No se puede garantizar 20/20 a partir de la compilación o de estas pruebas.
 
 PDF principal: Pruebas-Funcionales-AndinaSalud-Capturas.pdf, dos imágenes por hoja. PDF adicional: Evidencia-Git-AndinaSalud.pdf. Los informes de 35 y 51 pruebas son registros históricos; los 53 resultados actuales están en RESULTADOS-FINAL.
