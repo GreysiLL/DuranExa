@@ -74,3 +74,7 @@ Ver [alcance y comprobaciones](docs/ENTREGA-FINAL.md), [capturas funcionales](do
 La entrega es individual; no se acredita revisión cruzada. Los commits nuevos no representan trabajo registrado retrospectivamente durante el examen.
 
 La [auditoría por requisito](docs/AUDITORIA-EXAMEN.md) identifica lo comprobado y los pendientes de entrega.
+
+## Complemento de evidencias y defensa
+
+La captura real de shortlog y del gráfico de ramas está incorporada en [Evidencia Git](docs/Evidencia-Git-AndinaSalud.pdf). La [guía de defensa](docs/GUIA-DEFENSA.md) explica las once preguntas y los archivos que se deben mostrar. `evidencia.ps1` reproduce las consultas Git. El complemento es documental; v1.0-unidad1 conserva el commit de la aplicación evaluada.
