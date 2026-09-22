@@ -38,9 +38,9 @@ Para una API futura se crea una implementación del contrato en data, se mapean 
 
 ## Trabajo individual y ramas
 
-La estudiante indicó modalidad individual aunque el PDF describe una pareja. No se simulan aportes ni revisiones de terceros. La rama feature/base-andinasalud-duran nace de develop. main conserva únicamente la plantilla inicial; las funcionalidades se desarrollan en la rama de trabajo.
+La estudiante indicó modalidad individual aunque el PDF describe una pareja. No se simulan aportes ni revisiones de terceros. La rama feature/base-andinasalud-duran nace de develop. Las funcionalidades se desarrollaron en feature/base-andinasalud-duran y sc-abcd-duran. El script de publicación integra esas ramas en develop y después en main mediante commits de fusión.
 
-Los pull requests, revisiones y requisitos colaborativos deben acordarse con el docente para la modalidad individual. No se ha publicado el proyecto ni se ha creado la etiqueta final. Tras la revisión, la estudiante comunicó que el docente solicitó realizar las cuatro opciones SC-A a SC-D. Están implementadas; ver docs/PARTE-II.md. La creación de sc-abcd-duran desde esta sesión fue bloqueada por permisos de Git en Windows. El script guardar-parte-II.ps1 permite crear esa rama y guardar los cambios desde la terminal del propietario.
+Los pull requests, revisiones y requisitos colaborativos deben acordarse con el docente para la modalidad individual. El repositorio de entrega es https://github.com/GreysiLL/DuranExa. La etiqueta final aún está pendiente. Tras la revisión, la estudiante comunicó que el docente solicitó realizar las cuatro opciones SC-A a SC-D. Están implementadas; ver docs/PARTE-II.md. La creación de sc-abcd-duran desde esta sesión fue bloqueada por permisos de Git en Windows. El script guardar-parte-II.ps1 permite crear esa rama y guardar los cambios desde la terminal del propietario.
 
 ## Verificar y entregar
 
@@ -60,3 +60,9 @@ Ver [informe de pruebas](docs/Informe-Pruebas-AndinaSalud.pdf) y [verificacion](
 - SC-D: reprogramación desde el detalle; conserva la cita, reutiliza las validaciones y guarda el historial de horarios.
 
 Ver [explicación y pruebas](docs/PARTE-II.md). Las capturas y PDF de la versión base son evidencia histórica, anterior a estos cambios.
+
+## Repositorio de entrega
+
+Publicación con `subir-andinasalud.ps1`: conserva main, develop, feature/base-andinasalud-duran y sc-abcd-duran, sin forzar cambios remotos. Las fusiones locales no equivalen a revisiones por pull request.
+
+[PDF separado de capturas de la aplicación base](docs/Pruebas-Funcionales-AndinaSalud-Capturas.pdf): dos capturas por hoja y explicación breve. Las evidencias de las funciones añadidas después están en [CAPTURAS-PARTE-II](docs/CAPTURAS-PARTE-II) y [PARTE-II.md](docs/PARTE-II.md).
