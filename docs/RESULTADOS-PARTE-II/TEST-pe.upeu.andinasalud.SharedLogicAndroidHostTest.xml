@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pe.upeu.andinasalud.SharedLogicAndroidHostTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-22T20:51:06.250Z" hostname="LAPTOP-476K1L40" time="0.001">
+  <properties/>
+  <testcase name="example" classname="pe.upeu.andinasalud.SharedLogicAndroidHostTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

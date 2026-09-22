@@ -40,10 +40,23 @@ Para una API futura se crea una implementación del contrato en data, se mapean 
 
 La estudiante indicó modalidad individual aunque el PDF describe una pareja. No se simulan aportes ni revisiones de terceros. La rama feature/base-andinasalud-duran nace de develop. main conserva únicamente la plantilla inicial; las funcionalidades se desarrollan en la rama de trabajo.
 
-Los pull requests, revisiones y requisitos colaborativos deben acordarse con el docente para la modalidad individual. No se ha publicado el proyecto ni se ha creado la etiqueta final. Las solicitudes SC-A a SC-D corresponden al bloque individual del examen y no se han implementado anticipadamente.
+Los pull requests, revisiones y requisitos colaborativos deben acordarse con el docente para la modalidad individual. No se ha publicado el proyecto ni se ha creado la etiqueta final. Tras la revisión, la estudiante comunicó que el docente solicitó realizar las cuatro opciones SC-A a SC-D. Están implementadas; ver docs/PARTE-II.md. La creación de sc-abcd-duran desde esta sesión fue bloqueada por permisos de Git en Windows. El script guardar-parte-II.ps1 permite crear esa rama y guardar los cambios desde la terminal del propietario.
 
 ## Verificar y entregar
 
 ReglasCitaTest prueba RN-01 a RN-05, fronteras, filtros, datos semilla y concurrencia. Revisar los resultados reales de Gradle antes de afirmar que están aprobadas.
 
-Pendientes de entrega: ejecutar y revisar Android e iOS; capturar las seis pantallas por plataforma; incorporar capturas y evidencia de Git al PDF; completar la solicitud asignada; realizar las fusiones revisadas que correspondan y etiquetar v1.0-unidad1.
+Android se compiló y verificó. Pendientes de entrega: ejecutar iOS y capturar sus pantallas; actualizar la evidencia final de Git; realizar las fusiones revisadas que correspondan y etiquetar v1.0-unidad1.
+
+## Evidencias de pruebas Android
+
+Ver [informe de pruebas](docs/Informe-Pruebas-AndinaSalud.pdf) y [verificacion](docs/VERIFICACION.md). El informe anterior documenta las 35 pruebas de la versión base. La versión con SC-A a SC-D pasa 51 pruebas (docs/PRUEBAS-PARTE-II.log); iOS sigue pendiente. El banco visual de estados solo existe en debug.
+
+## Cambios de la Parte II
+
+- SC-A: chip Hoy combinado con estado y búsqueda, resuelto por el ViewModel usando la fecha local.
+- SC-B: contador global de Programadas y botones de solicitud deshabilitados al llegar al límite definido en el dominio.
+- SC-C: Presencial o Teleconsulta, con iconos distintos en formulario, tarjetas y detalle.
+- SC-D: reprogramación desde el detalle; conserva la cita, reutiliza las validaciones y guarda el historial de horarios.
+
+Ver [explicación y pruebas](docs/PARTE-II.md). Las capturas y PDF de la versión base son evidencia histórica, anterior a estos cambios.

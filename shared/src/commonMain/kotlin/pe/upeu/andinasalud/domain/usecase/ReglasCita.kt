@@ -5,8 +5,11 @@ import kotlin.time.Duration.Companion.hours
 class ErrorCampos(val campos: Map<String, String>) : IllegalArgumentException(campos.values.first())
 class ReglasCita(private val reloj: Reloj) {
  companion object { const val MAX_PROGRAMADAS = 3 }
+ fun contarProgramadas(citas: List<Cita>, pacienteId: String) =
+   citas.count { it.pacienteId == pacienteId && it.estado is EstadoCita.Programada }
  fun puedeSolicitar(citas: List<Cita>, pacienteId: String) =
-   citas.count { it.pacienteId == pacienteId && it.estado is EstadoCita.Programada } < MAX_PROGRAMADAS
+   contarProgramadas(citas, pacienteId) < MAX_PROGRAMADAS
+ fun puedeReprogramar(cita: Cita) = cita.estado is EstadoCita.Programada
  fun validarSolicitud(cita: Cita, existentes: List<Cita>) {
    val errores = mutableMapOf<String, String>()
    // RN-01: se compara el instante completo, no solo el dia.

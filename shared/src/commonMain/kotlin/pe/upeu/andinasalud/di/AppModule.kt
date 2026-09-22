@@ -18,8 +18,9 @@ val appModule=module {
  factory { ObservarCambiosUseCase(get()) }
  factory { SolicitarCitaUseCase(get(),get(),get()) }
  factory { CancelarCitaUseCase(get(),get(),get()) }
- viewModel { CitasViewModel(get(),get(),get()) }
- viewModel { DetalleCitaViewModel(get(),get(),get()) }
+ factory { ReprogramarCitaUseCase(get(),get(),get(),get()) }
+ viewModel { CitasViewModel(get(),get(),get(),get(),get()) }
+ viewModel { DetalleCitaViewModel(get(),get(),get(),get()) }
  viewModel { SolicitudViewModel(get(),get()) }
 }
 fun initKoin() { startKoin { modules(appModule) } }

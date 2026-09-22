@@ -15,6 +15,7 @@ import pe.upeu.andinasalud.presentation.citas.nombreEstado
  OutlinedCard(onClick=abrir,modifier=Modifier.fillMaxWidth()) { Column(Modifier.padding(16.dp),verticalArrangement=Arrangement.spacedBy(5.dp)) {
    Text(cita.medico.especialidad,style=MaterialTheme.typography.titleMedium)
    Text(cita.medico.nombre);Text("${cita.sede.nombre} · ${cita.fechaHora.date} · ${cita.fechaHora.time}")
+   ModalidadCita(cita.modalidad)
    Text(nombreEstado(cita.estado),color=MaterialTheme.colorScheme.primary)
  } }
 }

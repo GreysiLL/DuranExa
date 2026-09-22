@@ -26,15 +26,15 @@ import pe.upeu.andinasalud.presentation.perfil.*
  val solicitar:()->Unit={sesionSolicitud++;ruta=Destinos.SOLICITUD}
  Scaffold(topBar={TopAppBar(title={Text(if(ruta.isEmpty())principal else ruta)},navigationIcon={if(ruta.isNotEmpty())TextButton(onClick=volver){Text("Atrás")}})},bottomBar={
  NavigationBar { listOf(Destinos.INICIO,Destinos.CITAS,Destinos.PERFIL).forEachIndexed { i,d->
- NavigationBarItem(selected=principal==d,onClick={principal=d;ruta=""},icon={Text(listOf("⌂","▤","●")[i])},label={Text(d)})
+ NavigationBarItem(selected=principal==d,onClick={principal=d;ruta=""},icon={BadgedBox(badge={if(d==Destinos.CITAS && !s.cargando && s.error==null)Badge {Text("${s.programadas}")}}){Text(listOf("⌂","▤","●")[i])}},label={Text(d)})
  } } }) { padding -> Box(Modifier.fillMaxSize().padding(padding)) {
  when(ruta.ifEmpty { principal }) {
  Destinos.INICIO->InicioScreen(s,vm::cargar,{principal=Destinos.CITAS},solicitar,abrirDetalle)
- Destinos.CITAS->CitasScreen(s,vm.visibles(s),vm::buscar,vm::filtrar,vm::cargar,solicitar,abrirDetalle)
+ Destinos.CITAS->CitasScreen(s,vm.visibles(s),vm::buscar,vm::filtrar,vm::cargar,solicitar,abrirDetalle,vm::cambiarHoy)
  Destinos.PERFIL->PerfilScreen(s,vm::cargar){ruta=Destinos.AJUSTES}
  Destinos.AJUSTES->AjustesScreen(oscuro,cambiarTema)
- Destinos.DETALLE->{ val detalle: DetalleCitaViewModel=koinViewModel();val e by detalle.estado.collectAsState();LaunchedEffect(citaId){detalle.cargar(citaId)};DetalleCitaScreen(e,{detalle.cargar(citaId)},detalle::cancelar) }
- Destinos.SOLICITUD->{ val form: SolicitudViewModel=koinViewModel(key="solicitud-$sesionSolicitud");val e by form.estado.collectAsState();SolicitudScreen(e,form::cargar,form::cambiar,form::registrar,abrirDetalle) }
+ Destinos.DETALLE->{ val detalle: DetalleCitaViewModel=koinViewModel();val e by detalle.estado.collectAsState();LaunchedEffect(citaId){detalle.cargar(citaId)};DetalleCitaScreen(e,{detalle.cargar(citaId)},detalle::cancelar,detalle::abrirReprogramacion,detalle::cerrarReprogramacion,detalle::cambiarHorario,detalle::reprogramar) }
+ Destinos.SOLICITUD->{ val form: SolicitudViewModel=koinViewModel(key="solicitud-$sesionSolicitud");val e by form.estado.collectAsState();SolicitudScreen(e,form::cargar,form::cambiar,form::registrar,abrirDetalle,s.puedeSolicitar && !s.cargando && s.error==null) }
  }
  } }
 }

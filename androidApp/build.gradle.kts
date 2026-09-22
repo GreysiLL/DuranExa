@@ -11,6 +11,11 @@ kotlin {
     }
 }
 dependencies {
+    // Solo el banco visual de pruebas usa Compose directamente desde androidApp.
+    debugImplementation(libs.compose.foundation)
+    debugImplementation(libs.compose.material3)
+    debugImplementation(libs.compose.runtime)
+    debugImplementation(libs.compose.ui)
     implementation(project(":shared"))
 
     implementation(libs.androidx.activity.compose)
