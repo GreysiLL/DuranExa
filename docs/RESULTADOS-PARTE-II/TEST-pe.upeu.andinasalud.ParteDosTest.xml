@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pe.upeu.andinasalud.ParteDosTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-09-22T20:51:06.082Z" hostname="LAPTOP-476K1L40" time="0.126">
+  <properties/>
+  <testcase name="reprogramacionesAcumulanHistorial" classname="pe.upeu.andinasalud.ParteDosTest" time="0.008"/>
+  <testcase name="reprogramacionRechazaDuplicado" classname="pe.upeu.andinasalud.ParteDosTest" time="0.004"/>
+  <testcase name="reprogramacionesConcurrentesNoDuplicanHorario" classname="pe.upeu.andinasalud.ParteDosTest" time="0.011"/>
+  <testcase name="hoyCombinaEstadoBusquedaYFecha" classname="pe.upeu.andinasalud.ParteDosTest" time="0.02"/>
+  <testcase name="reprogramarNoAplicaRestriccionDeCancelacion" classname="pe.upeu.andinasalud.ParteDosTest" time="0.005"/>
+  <testcase name="hoyUsaFechaLocalNoUTC" classname="pe.upeu.andinasalud.ParteDosTest" time="0.013"/>
+  <testcase name="detalleMuestraErroresYDespuesHistorial" classname="pe.upeu.andinasalud.ParteDosTest" time="0.014"/>
+  <testcase name="reprogramacionSinCambioNoAgregaHistorial" classname="pe.upeu.andinasalud.ParteDosTest" time="0.005"/>
+  <testcase name="contadorIgnoraFiltrosYSeActualizaTrasCancelar" classname="pe.upeu.andinasalud.ParteDosTest" time="0.01"/>
+  <testcase name="reprogramacionValidaFormatoPorCampo" classname="pe.upeu.andinasalud.ParteDosTest" time="0.006"/>
+  <testcase name="modalidadesSeConservanEnRepositorio" classname="pe.upeu.andinasalud.ParteDosTest" time="0.005"/>
+  <testcase name="reprogramacionRechazaEstadoAtendidaYCancelada" classname="pe.upeu.andinasalud.ParteDosTest" time="0.003"/>
+  <testcase name="reprogramacionRechazaIdInexistente" classname="pe.upeu.andinasalud.ParteDosTest" time="0.004"/>
+  <testcase name="reprogramaConTresSinCrearOtraCitaYConservaDatos" classname="pe.upeu.andinasalud.ParteDosTest" time="0.005"/>
+  <testcase name="reprogramacionRechazaPasadoSinModificarDatos" classname="pe.upeu.andinasalud.ParteDosTest" time="0.005"/>
+  <testcase name="formularioEnviaModalidadElegida" classname="pe.upeu.andinasalud.ParteDosTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

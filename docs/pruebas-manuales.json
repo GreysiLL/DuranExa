@@ -1,0 +1,142 @@
+[
+  {
+    "prueba": "Inicio y proxima cita",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Busqueda ignora mayusculas y tildes",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Busqueda sin resultados",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Formulario vacio invalido",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "RN02 rechaza cuarta Programada",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Confirmacion no cancela al volver",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Cancelar actualiza detalle",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "RN04 motivo corto rechazado",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "RN01 pasado rechazado",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "RN05 horario duplicado rechazado",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Solicitud valida registrada",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Detalle de nueva cita",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "RN03 cancelacion cercana deshabilitada",
+    "resultado": "FALLO",
+    "detalle": ""
+  },
+  {
+    "prueba": "RN03 cancelacion cercana deshabilitada",
+    "resultado": "APROBADA",
+    "detalle": "Comprobado en el contenedor semantico de Compose; se corrigio el selector del ensayo inicial."
+  },
+  {
+    "prueba": "Atras de detalle vuelve a formulario",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Atras de formulario vuelve a Citas",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Inicio actualiza proxima cita",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Cambio de tema y navegacion",
+    "resultado": "APROBADA",
+    "detalle": "Conmutador checked=true y colores contrastados en capturas."
+  },
+  {
+    "prueba": "Banco visual muestra error",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Banco visual reintenta a vacio",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Banco visual muestra carga",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "App normal tras banco de pruebas",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Contraste barras de sistema modo oscuro",
+    "resultado": "APROBADA",
+    "detalle": "Iconos claros revisados visualmente en la compilacion final."
+  },
+  {
+    "prueba": "Filtro Atendida",
+    "resultado": "FALLO",
+    "detalle": ""
+  },
+  {
+    "prueba": "Filtro Atendida",
+    "resultado": "APROBADA",
+    "detalle": "Selector corregido: chip checkable, no etiqueta dentro de una tarjeta."
+  },
+  {
+    "prueba": "Filtro Cancelada",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Formulario conserva datos al rotar",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Banco visual reintenta a vacio",
+    "resultado": "APROBADA",
+    "detalle": ""
+  }
+]

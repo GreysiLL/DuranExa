@@ -41,10 +41,16 @@ kotlin {
     
     sourceSets {
         androidMain.dependencies {
+            implementation(libs.androidx.activity.compose)
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.compose.uiTooling)
         }
         commonMain.dependencies {
+            implementation("io.insert-koin:koin-core:4.2.2")
+            implementation("io.insert-koin:koin-compose:4.2.2")
+            implementation("io.insert-koin:koin-compose-viewmodel:4.2.2")
+            implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1")
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)
             implementation(libs.compose.material3)
@@ -55,6 +61,7 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtimeCompose)
         }
         commonTest.dependencies {
+            implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.2")
             implementation(libs.kotlin.test)
         }
     }

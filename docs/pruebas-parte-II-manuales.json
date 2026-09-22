@@ -1,0 +1,37 @@
+[
+  {
+    "prueba": "SC-A Hoy sin citas muestra vacio",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "SC-D rechaza fecha pasada",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "SC-D guarda nuevo horario",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "SC-A Hoy muestra cita reprogramada",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "SC-C registra modalidad seleccionada",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "SC-C detalle conserva teleconsulta",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "SC-B deshabilita solicitar al volver a tres",
+    "resultado": "APROBADA",
+    "detalle": ""
+  }
+]
