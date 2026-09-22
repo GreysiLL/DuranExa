@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pe.upeu.andinasalud.ReglasCitaTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2026-09-22T22:20:02.196Z" hostname="LAPTOP-476K1L40" time="0.023">
+  <properties/>
+  <testcase name="ordenaCronologicamente" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.001"/>
+  <testcase name="rechazaCuartaProgramada" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.001"/>
+  <testcase name="semillasCumplenMinimos" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.001"/>
+  <testcase name="motivoDoscientosValido" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="buscaSinTildesNiMayusculas" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="atendidasNoConsumenLimite" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="solicitudValida" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="motivoDiezValido" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.001"/>
+  <testcase name="rechazaHorarioDuplicado" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="noCancelaCancelada" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.001"/>
+  <testcase name="permiteCancelarMasDeVeinticuatroHoras" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="fuenteCargaEnOchocientosMilisegundos" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.002"/>
+  <testcase name="motivoDoscientosUnoInvalido" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="permiteMomentoActualSegunRN01" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.001"/>
+  <testcase name="noCancelaAtendida" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="combinaBusquedaYEstado" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="espaciosNoSonMotivo" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.001"/>
+  <testcase name="cancelarLiberaUnaPlazaYRegistrarActualizaDatos" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.003"/>
+  <testcase name="canceladaNoBloqueaHorario" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="solicitudesSimultaneasNoSuperanLimite" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.005"/>
+  <testcase name="camposInvalidosSeInformanPorSeparado" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.002"/>
+  <testcase name="rechazaPasado" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="noPermiteCancelarMenosDeVeinticuatroHoras" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.001"/>
+  <testcase name="motivoNueveInvalido" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="limiteEsPorPaciente" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.0"/>
+  <testcase name="noPermiteCancelarExactamenteVeinticuatroHoras" classname="pe.upeu.andinasalud.ReglasCitaTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

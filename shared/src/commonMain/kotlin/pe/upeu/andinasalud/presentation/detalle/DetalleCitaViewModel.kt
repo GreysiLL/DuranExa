@@ -28,7 +28,7 @@ class DetalleCitaViewModel(
             mutable.value=DetalleUiState()
             try { mutable.value=mostrar(obtener().find { it.id==id }) }
             catch(e: CancellationException){throw e}
-            catch(e: Exception){mutable.value=DetalleUiState(cargando=false,error=e.message)}
+            catch(e: Exception){mutable.value=DetalleUiState(cargando=false,error=e.message?.takeIf { it.isNotBlank() } ?: "No se pudo cargar la cita. Intenta nuevamente.")}
         }
     }
     fun cancelar() {
@@ -38,7 +38,7 @@ class DetalleCitaViewModel(
         job=viewModelScope.launch {
             try { cancelar(cita.id);mutable.value=mostrar(obtener().find { it.id==cita.id },"Cita cancelada correctamente.") }
             catch(e: CancellationException){throw e}
-            catch(e: Exception){mutable.update { it.copy(cancelando=false,error=e.message) }}
+            catch(e: Exception){mutable.update { it.copy(cancelando=false,error=e.message?.takeIf { it.isNotBlank() } ?: "No se pudo cancelar la cita. Intenta nuevamente.") }}
         }
     }
     fun abrirReprogramacion() {
