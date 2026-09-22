@@ -1,0 +1,12 @@
+[
+  {
+    "prueba": "Paciente personalizado en Inicio",
+    "resultado": "APROBADA",
+    "detalle": ""
+  },
+  {
+    "prueba": "Formulario alcanzable despues de cancelar",
+    "resultado": "APROBADA",
+    "detalle": ""
+  }
+]

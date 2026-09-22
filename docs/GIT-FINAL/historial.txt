@@ -1,0 +1,12 @@
+*   11ee639 (entrega/main, main) merge: publicar AndinaSalud y la Parte II desde develop
+|\  
+| *   6d94c5b (entrega/develop, develop) merge: integrar los cuatro cambios de la Parte II en develop
+| |\  
+| | * 9217ef1 (HEAD -> sc-abcd-duran, entrega/sc-abcd-duran) docs: preparar evidencias y publicacion de AndinaSalud
+| | * c133295 feat(parte-II): implementar Hoy, limite, modalidad y reprogramacion con pruebas
+| * | bb76584 merge: integrar la aplicacion base en develop
+|/| | 
+| |/  
+| * 9409e7d (entrega/feature/base-andinasalud-duran, feature/base-andinasalud-duran) feat(andinasalud): implementar citas en memoria con reglas y pantallas
+|/  
+* 4648752 chore: inicializar la plantilla KMP de Android Studio
