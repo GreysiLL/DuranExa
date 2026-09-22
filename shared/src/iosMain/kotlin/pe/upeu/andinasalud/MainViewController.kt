@@ -1,5 +1,5 @@
 package pe.upeu.andinasalud
-
 import androidx.compose.ui.window.ComposeUIViewController
-
-fun MainViewController() = ComposeUIViewController { App() }
+import pe.upeu.andinasalud.di.initKoin
+private object InicioIos { init { initKoin() }; fun preparar() {} }
+fun MainViewController() = run { InicioIos.preparar(); ComposeUIViewController { App() } }
