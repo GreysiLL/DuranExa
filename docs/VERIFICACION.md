@@ -1,3 +1,5 @@
+> Registro histórico. Para el estado vigente, consultar ENTREGA-FINAL.md y AUDITORIA-EXAMEN.md: 53 pruebas aprobadas y alcance Android autorizado, según lo comunicado por la estudiante. Los pendientes de iOS mencionados abajo pertenecen a la revisión anterior.
+
 # Actualización: Parte II
 
 La versión actual incluye SC-A a SC-D y pasa 51 pruebas. Ver PARTE-II.md y PRUEBAS-PARTE-II.log. El registro que sigue corresponde a la verificación anterior de la aplicación base.

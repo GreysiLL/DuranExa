@@ -3,7 +3,7 @@ import kotlinx.datetime.*
 import pe.upeu.andinasalud.domain.model.*
 import pe.upeu.andinasalud.domain.usecase.Reloj
 object CitasSimuladas {
- val paciente = Paciente("P-0417","Lucía Quispe Mamani","70154823","lucia.quispe@correo.pe","987654321")
+ val paciente = Paciente("P-0417","Grease Duran Castro","70154823","grease.duran@correo.pe","910163345")
  val sedes = listOf(Sede("N","Ñaña"),Sede("C","Chosica"),Sede("CH","Chaclacayo"),Sede("S","Santa Anita"))
  val especialidades = listOf("Medicina General","Odontología","Pediatría","Nutrición","Psicología")
  val medicos = especialidades.flatMapIndexed { indice, esp ->

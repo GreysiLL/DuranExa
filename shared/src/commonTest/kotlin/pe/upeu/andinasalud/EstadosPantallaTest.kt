@@ -18,6 +18,7 @@ import pe.upeu.andinasalud.presentation.solicitud.SolicitudViewModel
 private class FuentePrueba : CitaRepository {
     override val cambios = MutableStateFlow(0)
     var fallar = false
+    var errorLectura: Exception? = null
     var registros = CitasSimuladas.citas(RelojFijo())
     override suspend fun catalogo(): Catalogo {
         delay(800)
@@ -26,6 +27,7 @@ private class FuentePrueba : CitaRepository {
     }
     override suspend fun obtener(): List<Cita> {
         delay(800)
+        errorLectura?.let { throw it }
         if (fallar) error("Error de prueba")
         return registros
     }
@@ -97,5 +99,34 @@ class EstadosPantallaTest {
         val vm=listado(FuentePrueba());runCurrent();store.clear();advanceUntilIdle()
         assertTrue(vm.estado.value.cargando)
         assertNull(vm.estado.value.error)
+    }
+
+    private fun detalle(repo: FuentePrueba): DetalleCitaViewModel {
+        val reloj=RelojFijo();val reglas=ReglasCita(reloj);val operaciones=OperacionesCitas()
+        return DetalleCitaViewModel(ObtenerCitasUseCase(repo),CancelarCitaUseCase(repo,reglas,operaciones),
+            reglas,ReprogramarCitaUseCase(repo,reglas,operaciones,reloj)).also { store.put("detalle",it) }
+    }
+    @Test fun detalleMuestraErrorSinMensajeYPermiteReintentar() = runTest(dispatcher) {
+        val repo=FuentePrueba().apply { errorLectura=Exception() };val vm=detalle(repo)
+        val id=repo.registros.first().id
+        vm.cargar(id);advanceUntilIdle()
+        assertFalse(vm.estado.value.cargando)
+        assertEquals("No se pudo cargar la cita. Intenta nuevamente.",vm.estado.value.error)
+        repo.errorLectura=null;vm.cargar(id);advanceUntilIdle()
+        assertNull(vm.estado.value.error);assertEquals(id,vm.estado.value.cita?.id)
+    }
+    @Test fun cancelacionFallidaSinMensajeConservaCitaYPermiteReintentar() = runTest(dispatcher) {
+        val repo=FuentePrueba();val vm=detalle(repo)
+        val cita=repo.registros.first { ReglasCita(RelojFijo()).puedeCancelar(it) }
+        vm.cargar(cita.id);advanceUntilIdle()
+        repo.errorLectura=Exception("")
+        vm.cancelar();advanceUntilIdle()
+        assertFalse(vm.estado.value.cancelando)
+        assertEquals("No se pudo cancelar la cita. Intenta nuevamente.",vm.estado.value.error)
+        assertEquals(cita,vm.estado.value.cita)
+        repo.errorLectura=null;vm.cancelar();advanceUntilIdle()
+        assertNull(vm.estado.value.error)
+        assertTrue(vm.estado.value.cita?.estado is EstadoCita.Cancelada)
+        assertFalse(vm.estado.value.puedeCancelar)
     }
 }

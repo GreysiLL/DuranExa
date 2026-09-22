@@ -10,11 +10,11 @@ Abrir en Android Studio, sincronizar Gradle y ejecutar androidApp. Usar JDK 21 y
 .\gradlew.bat :shared:testAndroidHostTest :androidApp:assembleDebug
 ```
 
-Para iOS: en macOS con Xcode abrir iosApp/iosApp.xcodeproj y ejecutar en un simulador. Sus destinos están configurados; su ejecución no se ha verificado en Windows.
+Alcance de entrega: Android, según la autorización del profesor comunicada por la estudiante el 22/09/2026. iOS mantiene sus destinos configurados, pero no se ha ejecutado ni se presenta como verificado.
 
 ## Funciones
 
-Inicio con próxima cita; listado ordenado, búsqueda sin tildes ni mayúsculas y filtros; detalle con cancelación confirmada; solicitud con errores por campo; perfil; ajustes de tema claro/oscuro. Perfil y Ajustes se separaron para obtener seis pantallas: confirmar esta interpretación con el docente. La barra inferior mantiene Inicio, Citas y Perfil.
+Inicio con próxima cita; listado ordenado, búsqueda sin tildes ni mayúsculas y filtros; detalle con cancelación confirmada; solicitud con errores por campo; perfil; ajustes de tema claro/oscuro. Las seis pantallas son Inicio, Citas, Detalle, Solicitud, Perfil y Ajustes. La barra inferior mantiene Inicio, Citas y Perfil.
 
 ## Organización
 
@@ -40,17 +40,17 @@ Para una API futura se crea una implementación del contrato en data, se mapean 
 
 La estudiante indicó modalidad individual aunque el PDF describe una pareja. No se simulan aportes ni revisiones de terceros. La rama feature/base-andinasalud-duran nace de develop. Las funcionalidades se desarrollaron en feature/base-andinasalud-duran y sc-abcd-duran. El script de publicación integra esas ramas en develop y después en main mediante commits de fusión.
 
-Los pull requests, revisiones y requisitos colaborativos deben acordarse con el docente para la modalidad individual. El repositorio de entrega es https://github.com/GreysiLL/DuranExa. La etiqueta final aún está pendiente. Tras la revisión, la estudiante comunicó que el docente solicitó realizar las cuatro opciones SC-A a SC-D. Están implementadas; ver docs/PARTE-II.md. La creación de sc-abcd-duran desde esta sesión fue bloqueada por permisos de Git en Windows. El script guardar-parte-II.ps1 permite crear esa rama y guardar los cambios desde la terminal del propietario.
+Los pull requests, revisiones y requisitos colaborativos deben acordarse con el docente para la modalidad individual. El repositorio de entrega es https://github.com/GreysiLL/DuranExa. El cierre con la etiqueta v1.0-unidad1 se realiza mediante finalizar-entrega.ps1; consultar las etiquetas publicadas para verificar su ejecución. Tras la revisión, la estudiante comunicó que el docente solicitó realizar las cuatro opciones SC-A a SC-D. Están implementadas; ver docs/PARTE-II.md. La creación de sc-abcd-duran desde esta sesión fue bloqueada por permisos de Git en Windows. El script guardar-parte-II.ps1 permite crear esa rama y guardar los cambios desde la terminal del propietario.
 
 ## Verificar y entregar
 
 ReglasCitaTest prueba RN-01 a RN-05, fronteras, filtros, datos semilla y concurrencia. Revisar los resultados reales de Gradle antes de afirmar que están aprobadas.
 
-Android se compiló y verificó. Pendientes de entrega: ejecutar iOS y capturar sus pantallas; actualizar la evidencia final de Git; realizar las fusiones revisadas que correspondan y etiquetar v1.0-unidad1.
+Android se compiló y verificó. La entrega final y sus límites se describen en docs/ENTREGA-FINAL.md. La defensa y la evaluación de los requisitos históricos de Git corresponden al profesor.
 
 ## Evidencias de pruebas Android
 
-Ver [informe de pruebas](docs/Informe-Pruebas-AndinaSalud.pdf) y [verificacion](docs/VERIFICACION.md). El informe anterior documenta las 35 pruebas de la versión base. La versión con SC-A a SC-D pasa 51 pruebas (docs/PRUEBAS-PARTE-II.log); iOS sigue pendiente. El banco visual de estados solo existe en debug.
+Ver [informe de pruebas](docs/Informe-Pruebas-AndinaSalud.pdf) y [verificacion](docs/VERIFICACION.md). El informe anterior documenta las 35 pruebas de la versión base. La revisión actual pasa 53 pruebas (docs/VERIFICACION-FINAL.log y docs/RESULTADOS-FINAL); el registro anterior de Parte II contiene 51 pruebas. iOS está fuera del alcance autorizado comunicado para esta entrega. El banco visual de estados solo existe en debug.
 
 ## Cambios de la Parte II
 
@@ -65,4 +65,12 @@ Ver [explicación y pruebas](docs/PARTE-II.md). Las capturas y PDF de la versió
 
 Publicación con `subir-andinasalud.ps1`: conserva main, develop, feature/base-andinasalud-duran y sc-abcd-duran, sin forzar cambios remotos. Las fusiones locales no equivalen a revisiones por pull request.
 
-[PDF separado de capturas de la aplicación base](docs/Pruebas-Funcionales-AndinaSalud-Capturas.pdf): dos capturas por hoja y explicación breve. Las evidencias de las funciones añadidas después están en [CAPTURAS-PARTE-II](docs/CAPTURAS-PARTE-II) y [PARTE-II.md](docs/PARTE-II.md).
+[PDF actualizado de pruebas funcionales](docs/Pruebas-Funcionales-AndinaSalud-Capturas.pdf): dos capturas por hoja y explicación breve. Las imágenes originales de la Parte II están en [CAPTURAS-PARTE-II](docs/CAPTURAS-PARTE-II) y [PARTE-II.md](docs/PARTE-II.md).
+
+## Entrega final Android
+
+Ver [alcance y comprobaciones](docs/ENTREGA-FINAL.md), [capturas funcionales](docs/Pruebas-Funcionales-AndinaSalud-Capturas.pdf) y [evidencia Git](docs/Evidencia-Git-AndinaSalud.pdf). Se conservan los informes anteriores como registros históricos.
+
+La entrega es individual; no se acredita revisión cruzada. Los commits nuevos no representan trabajo registrado retrospectivamente durante el examen.
+
+La [auditoría por requisito](docs/AUDITORIA-EXAMEN.md) identifica lo comprobado y los pendientes de entrega.

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pe.upeu.andinasalud.EstadosPantallaTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-22T22:20:01.584Z" hostname="LAPTOP-476K1L40" time="0.476">
+  <properties/>
+  <testcase name="formularioComunicaErroresPorCampo" classname="pe.upeu.andinasalud.EstadosPantallaTest" time="0.406"/>
+  <testcase name="cancelacionFallidaSinMensajeConservaCitaYPermiteReintentar" classname="pe.upeu.andinasalud.EstadosPantallaTest" time="0.015"/>
+  <testcase name="detalleInexistenteEsVacio" classname="pe.upeu.andinasalud.EstadosPantallaTest" time="0.003"/>
+  <testcase name="formularioBloqueaDoblePulsacion" classname="pe.upeu.andinasalud.EstadosPantallaTest" time="0.007"/>
+  <testcase name="listaPasaDeCargaAContenido" classname="pe.upeu.andinasalud.EstadosPantallaTest" time="0.015"/>
+  <testcase name="errorYReintentoRecuperanContenido" classname="pe.upeu.andinasalud.EstadosPantallaTest" time="0.008"/>
+  <testcase name="detalleMuestraErrorSinMensajeYPermiteReintentar" classname="pe.upeu.andinasalud.EstadosPantallaTest" time="0.004"/>
+  <testcase name="listaVacia" classname="pe.upeu.andinasalud.EstadosPantallaTest" time="0.003"/>
+  <testcase name="destruccionCancelaCarga" classname="pe.upeu.andinasalud.EstadosPantallaTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
